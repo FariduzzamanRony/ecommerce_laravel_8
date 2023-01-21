@@ -1,0 +1,70 @@
+
+.review_container{
+ Position: relative;
+ Width: 100%;
+ Background: #ffff;
+ Border-radius: 5px;
+ Display: flex;
+}
+.review_container .post{
+ Display: none;
+}
+.review_container .text{
+ Font-size: 50px;
+ Color: #666;
+ Font-weight: 500;
+}
+.review_container .edit{
+ Position: absolute;
+ Right: 10px;
+ Top: 5px;
+ Font-size: 50px;
+ Color: #666;
+ Font-weight: 500;
+ Cursor: pointer;
+}
+.review_container .edit:hover{
+ Text-decoration: underline;
+}
+.star_input{
+ Display: none;
+}
+.star-widget label{
+ Font-size: 50px;
+ Color: #444;
+ Padding: 10px;
+ Float: right;
+ Transition: all 0.2s ease;
+}
+Input:not(:checked) ~ label:hover,
+Input:not(:checked) ~ label:hover ~ label{
+ Color: #fd4;
+}
+Input:checked ~ label{
+ Color: #fd4;
+}
+Input#rate-5:checked ~ label{
+ Color: #fe7;
+ Text-shadow: 0 0 20px #952;
+}
+#rate-1:checked ~ form header:before{
+ Content: "I just hate it ";
+}
+#rate-2:checked ~ form header:before{
+ Content: "I don’t like it ";
+}
+#rate-3:checked ~ form header:before{
+ Content: "It is awesome ";
+}
+#rate-4:checked ~ form header:before{
+ Content: "I just like it ";
+}
+#rate-5:checked ~ form header:before{
+ Content: "I just love it ";
+}
+.review_container form{
+ Display: none;
+}
+Input:checked ~ form{
+ Display: block;
+}

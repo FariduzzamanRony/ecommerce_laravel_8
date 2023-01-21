@@ -1,0 +1,28 @@
+#iqbal{
+
+    margin: 0px;
+    padding: 0px;
+    display: none;
+
+}
+
+
+#iqbal_img{
+
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    height: 500px;
+
+
+}
+
+#loader_img img{
+
+    width: 500px;
+
+}
